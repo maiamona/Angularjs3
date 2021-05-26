@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="loja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="Angular/angular.min.js"></script>
+</head>
+
+<body ng-controller="mona" id="corpo">
+    <table>
+        <tr>
+            <td>Nome:</td>
+            <td><input type="text" ng-model="user.Nome"></td>
+        </tr>
+
+        <tr>
+            <td> sobrenome:</td>
+            <td><input type="text" ng-model="use.Nome"></td>
+        </tr>
+        <tr>
+            <td> Nome completo:</td>
+            <td><input type="text" ng-model="user.Nome +' '+ use.Nome"></td>
+        </tr>
+    </table>
+    <h1>{{contador}}</h1>
+    <button ng-click="handleAction()">clicar</button>
+    <h1>expressão1</h1>
+    <div ng-init="valor=2;cota=5">
+<p>Total em dolar: {{valor * cota}}</p>
+    </div>
+    <h1>expressão2</h1>
+    <div ng-init="quantity=3;cost=5">
+<p>Total in dolar: <span ng-bind="quantity * cost"></span></p>
+    </div> 
+    <h1>Angularjs Objects</h1>
+    <div ng-init="person={firstName:'mona',lastName:'elias'}">
+<p>Nome é: {{person.firstName + " " + person.lastName}}</p>
+    </div>
+</body>
+<script src="js/java.js"></script>
+
+</html>

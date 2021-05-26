@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Nova pasta/bootstrap-4.5.2-dist/css/bootstrap.min.css">
+    <script src="Angular/angular.min.js"></script>
+</head>
+<body>
+  <div ng-controller="mona1">
+<select ng-model="selectedName" ng-options="x for x in names"></select>
+  </div>  <br><br><br>
+<h1>Eu</h1>
+  <div ng-controller="mona2">
+    <select>
+      <option ng-repeat="x in names">{{x}}</option>
+    </select>
+      </div>
+      <br><br><br>
+      <div ng-controller="nameCtrl">
+<p>Selecione o nome:</p>
+
+<select ng-model="expression">
+  <option ng-repeat="x in lista" value="{{x.nomes}}">{{x.nomes}}</option>
+</select>
+<h1>Selecionado: {{expression}}</h1>
+      </div> <br><br><br>
+    
+      <div ng-controller="nameCtrl">
+<p>Selecione o nome e a cidade(json):</p>
+
+<select ng-model="nameCtrl" ng-options="x for (x, y) in lista" >
+</select>
+<h1>Nome: {{nameCtrl.nomes}}</h1>
+<h2>Cidade: {{nameCtrl.cidade}}</h2>
+      </div><br><br><br>
+      <div ng-init="fraction=true">
+<p><button ng-disabled="fraction">click me</button></p>
+<p><input type="checkbox" ng-model="fraction">button</p>
+<p>{{fraction}}</p>
+<p ng-show="fraction">Mostrando</p>
+<p ng-hide="fraction">Escondendo</p>
+      </div>
+</body>
+<script src="Js/indexe5.js"></script>
+</html>

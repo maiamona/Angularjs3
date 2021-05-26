@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Nova pasta/bootstrap-4.5.2-dist/css/bootstrap.min.css">
+    <script src="Angular/angular.min.js"></script>
+    <script src="Angular/angular-route.js"></script>
+    <script src="Angular/angular-resource.js"></script>
+</head>
+<body ng-controller="nameCtrl">
+    <input type="text" ng-value="100" ng-model="CodPessoa"><br>
+    <button ng-click="ID()">Buscar por id</button><br>
+    <button ng-click="Todos()">Buscar Todos</button><br>
+    <button ng-click="SalvarPessoa()">Salvar Pessoas</button><br>
+    <button ng-click="Deletar()">Apagar</button>
+    <h1>{{objetoPessoa}}</h1>
+</body>
+<script src="js/index6.js"></script>
+</html>

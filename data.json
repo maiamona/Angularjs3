@@ -1,0 +1,24 @@
+{
+    "weather": [
+        {
+            "day": "Sunday",
+            "descrition": "Sunny all day",
+            "temp": "82"
+        },
+        {
+            "day": "Monday",
+            "descrition": "Cloudy w change of rain ",
+            "temp": "65"
+        },
+        {
+            "day": "Tuesday",
+            "descrition": "Sunny early on and cloudy in afternoon",
+            "temp": "87"
+        },
+        {
+            "day": "Wednesday",
+            "descrition": "Sunny all day",
+            "temp": "86"
+        }
+    ]
+}

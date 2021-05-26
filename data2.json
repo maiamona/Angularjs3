@@ -1,0 +1,21 @@
+{
+    "weather": [
+        {
+            "nomes": "Lucinda",
+            "cidade": "America"   
+        },
+        {
+            "nomes": "Mayso",
+            "cidade": "Israel"
+        },
+        {
+            "nomes": "Cazevo",
+            "cidade": "Brazil"
+        },
+        {
+            "nomes": "Garcia",
+            "cidade": "Babilonia"
+        }
+    ]
+}
+    

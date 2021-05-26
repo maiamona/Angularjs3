@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Nova pasta/bootstrap-4.5.2-dist/css/bootstrap.min.css">
+    <script src="Angular/angular.min.js"></script>
+</head>
+<body>
+    <div ng-controller="pegarResposta">
+  <!-- <button ng-click="pegarResposta()">Pegar Resposta Servidor</button>
+   <input type="text" id="resposta"> -->
+   <h1>{{error}}</h1>
+   <table class="table table-bordered table-striped">
+       <thead>
+           <tr>
+               <th>DIA</th>
+               <th>TEMPERATURA</th>
+               <th>DISCRICAO</th>
+               
+           </tr>
+       </thead>
+       <tbody>
+           <tr ng-repeat="day in data">
+               <td>{{day.day}}</td>
+               <td>{{day.temp}}</td>
+               <td>{{day.descrition}}</td>
+           </tr>
+       </tbody>
+   </table>
+</div>
+</body>
+<script src="Js/index4.js"></script>
+</html>

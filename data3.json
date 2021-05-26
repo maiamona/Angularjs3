@@ -1,0 +1,24 @@
+{
+    "weather": [
+        {
+            "nomes": "Lucinda",
+            "cidade": "America",
+            "CodPessoa": "1"   
+        },
+        {
+            "nomes": "Mayso",
+            "cidade": "Israel",
+            "CodPessoa": "2"
+        },
+        {
+            "nomes": "Cazevo",
+            "cidade": "Brazil",
+            "CodPessoa": "3"
+        },
+        {
+            "nomes": "Garcia",
+            "cidade": "Babilonia",
+            "CodPessoa": "4"
+        }
+    ]
+}

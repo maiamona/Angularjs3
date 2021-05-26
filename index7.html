@@ -1,0 +1,27 @@
+<html ng-app="myApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Angular.js Example with mysql</title>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.1/angular.min.js"></script>
+    <script>
+      var app = angular.module('myApp', []);
+      app.controller('myCtrl', function ($scope, $http){
+        $http({
+            method : 'GET',
+            url : 'Main'
+            
+        }).then(function mySucc(response){
+            $scope.myData = response.data.map;
+            $scope.statuscode = response.status;
+        });
+      });
+    </script>
+  </head>
+  <body ng-controller="myCtrl">
+    <table>
+      <tr ng-repeat="x in myData">
+        <td>{{x.name+ " "+x.email+ " "+x.pass}}</td>
+      </tr>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="Angular/angular.min.js"></script>
+    <script src="Angular/angular-route.js"></script>
+</head>
+<body>
+   <div inventado-mona></div>
+   <form name="myForm">
+       Email:
+       <input type="email" name="myAddress" ng-model="text">
+       <span ng-show="myForm.myAddress.$error.email">emael invalido</span>
+   </form> 
+   <div ng-controller="localização">
+<p>o url desta página é:</p>
+<h3>{{myUrl}}</h3>
+   </div>
+   <div ng-controller="controllerTimeOut">
+<p>Timeout services:</p>
+<h1>{{timermsg}}</h1>
+   </div>
+   <div ng-controller="controllerIntervalo">
+<p>O tempo é:</p>
+<h1>{{intervalo}}</h1>
+   </div>
+</body>
+<script src="Js/index3.js"></script>
+</html>
